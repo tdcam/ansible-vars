@@ -1,0 +1,13 @@
+---
+- name: add users to systems
+  hosts: all
+  vars_files: vars/users.yml
+  tasks:
+    - name: add users
+      ansible.builtin.user:
+        name: "{{ item.name }}"
+        home: "{{ item.home }}"
+        comment: "{{ item.comment }}"
+        groups: "{{ item.groups }}"
+      loop: "{{ users_to_add }}"
+

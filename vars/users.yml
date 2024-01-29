@@ -1,0 +1,13 @@
+useras_to_add:
+- name: aswin.shanmuganathan
+  comment: Aswin Shanmuganathan
+  home: /home/aswin.shanmuganathan
+  groups: wheel
+- name: thomas.cameron
+  comment: Thomas Cameron
+  home: /home/thomas.cameron
+  groups: wheel
+- name: justin.lee
+  comment: Justin Lee
+  home: /home/justin.lee
+  groups: wheel
