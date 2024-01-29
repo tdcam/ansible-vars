@@ -1,0 +1,15 @@
+---
+- name: Remove users
+  hosts: all
+  vars_files: 
+    - vars/users.yml
+  tasks: 
+  - name: remove users
+    ansible.builtin.user:
+      name: "{{ item.name }}"
+      home: "{{ item.home }}"
+      comment: "{{ item.comment }}"
+      groups: "{{ item.groups }}"
+      state: absent
+      remove: true
+    loop: "{{ users_to_add }}"

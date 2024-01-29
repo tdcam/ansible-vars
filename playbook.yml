@@ -9,5 +9,6 @@
         home: "{{ item.home }}"
         comment: "{{ item.comment }}"
         groups: "{{ item.groups }}"
+        password: "{{ item.password }}"
       loop: "{{ users_to_add }}"
 

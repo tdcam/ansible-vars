@@ -4,5 +4,5 @@ ansible-navigator:
     image: registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8
     pull:
       policy: missing
-      playbook-artifact:
-        enable: false
+  playbook-artifact:
+    enable: false
