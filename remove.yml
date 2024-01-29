@@ -10,6 +10,7 @@
       home: "{{ item.home }}"
       comment: "{{ item.comment }}"
       groups: "{{ item.groups }}"
+      password: "{{ item.password }}"
       state: absent
       remove: true
     loop: "{{ users_to_add }}"
